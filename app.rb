@@ -7,5 +7,7 @@ class App < Sinatra::Base
 
   post '/latin' do
     @user_input = params[:user_input]
+
+    erb :latin
   end
 end
