@@ -5,9 +5,9 @@ class App < Sinatra::Base
     erb :user_input
   end
 
-  post '/latin' do
+  post '/piglatinize' do
     @user_input = params[:user_input]
 
-    erb :latin
+    erb :piglatinize
   end
 end
